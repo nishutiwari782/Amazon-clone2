@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            amazon<span>.in</span>
+        </div>
+
+        <div class="location">
+            <small>Deliver to</small>
+            <strong>📍 India</strong>
+        </div>
+
+        <div class="search-box">
+            <select id="categorySelect">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home</option>
+                <option value="books">Books</option>
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Amazon"
+            >
+
+            <button id="searchBtn">🔍</button>
+        </div>
+
+        <div class="nav-item">
+            <small>Hello, Sign in</small>
+            <strong>Account & Lists</strong>
+        </div>
+
+        <div class="nav-item">
+            <small>Returns</small>
+            <strong>& Orders</strong>
+        </div>
+
+        <div class="cart">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </div>
+
+    </nav>
+
+
+    <!-- MENU -->
+    <div class="menu">
+        <span>☰ All</span>
+        <span>Today's Deals</span>
+        <span>Customer Service</span>
+        <span>Best Sellers</span>
+        <span>Mobiles</span>
+        <span>Electronics</span>
+        <span>Fashion</span>
+        <span>Books</span>
+    </div>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Welcome to Amazon</h1>
+
+            <p>
+                Great deals on electronics, fashion,
+                home products and more.
+            </p>
+
+            <button onclick="scrollToProducts()">
+                Shop Now
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <main>
+
+        <div class="heading">
+            <h2>Today's Deals</h2>
+        </div>
+
+        <div id="products" class="product-grid">
+        </div>
+
+        <div id="noProducts" class="no-products">
+            No products found.
+        </div>
+
+    </main>
+
+
+    <!-- CART SIDEBAR -->
+    <div id="cartOverlay" class="overlay"></div>
+
+    <aside id="cartSidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+        </div>
+
+        <div id="cartItems">
+        </div>
+
+        <div class="cart-footer">
+
+            <h3>
+                Total:
+                ₹<span id="cartTotal">0</span>
+            </h3>
+
+            <button class="checkout">
+                Proceed to Buy
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <footer>
+
+        <div class="back-top" onclick="window.scrollTo(0,0)">
+            Back to top
+        </div>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>Get to Know Us</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Press Releases</p>
+            </div>
+
+            <div>
+                <h3>Connect with Us</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+
+            <div>
+                <h3>Make Money with Us</h3>
+                <p>Sell on Amazon</p>
+                <p>Advertise Your Products</p>
+                <p>Become an Affiliate</p>
+            </div>
+
+            <div>
+                <h3>Let Us Help You</h3>
+                <p>Your Account</p>
+                <p>Returns Centre</p>
+                <p>Help</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Amazon Clone | Educational Project
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
